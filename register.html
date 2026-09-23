@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="auth-lock">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account — Stackly Talent Acquisition</title>
+  <meta name="description" content="Create a demo client or admin account for Stackly Talent. Stored in localStorage only.">
+  <meta name="theme-color" content="#F7F4EF">
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="Css/style.css?v=sta12">
+  <link rel="stylesheet" href="Css/pages.css?v=sta20">
+  <link rel="stylesheet" href="Css/responsive.css?v=sta34">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="auth-page is-loading">
+  <a class="skip-link" href="#main">Skip to form</a>
+  <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Opening the signal board">
+    <div class="pre-grid" aria-hidden="true"></div>
+    <div class="pre-plate">
+      <p class="kicker">Stackly Talent</p>
+      <div class="reticle" aria-hidden="true"><span class="reticle-h"></span><span class="reticle-v"></span><span class="reticle-dot"></span></div>
+      <p class="pre-word" data-pre-word>Brief</p>
+      <div class="meter" aria-hidden="true"><span></span></div>
+      <p class="pre-meta"><span data-meter>00</span><span data-pre-stage>Opening the board</span><span>STA</span></p>
+    </div>
+  </div>
+  <main id="main" class="auth">
+    <section class="auth-card" data-aos="plate-rise">
+      <header class="auth-brand">
+        <a class="auth-logo wordmark" href="index.html">
+          <img src="img/stackly-signal-red.webp" width="180" height="48" alt="Stackly Talent">
+        </a>
+        <p class="kicker">New desk account</p>
+        <h1>Create account</h1>
+        <p class="auth-lede">Client or Admin. Saved on this browser, then you sign in.</p>
+      </header>
+      <form class="auth-form" data-register novalidate>
+        <div data-field>
+          <p class="kicker" id="reg-role">Account</p>
+          <div class="auth-roles" role="radiogroup" aria-labelledby="reg-role">
+            <label class="auth-role"><input type="radio" name="role" value="client" checked> Client</label>
+            <label class="auth-role"><input type="radio" name="role" value="admin"> Admin</label>
+          </div>
+        </div>
+        <div data-field>
+          <label for="r-name">Full name</label>
+          <input id="r-name" name="name" type="text" required autocomplete="name" placeholder="Enter name">
+          <p class="field-error">Enter a name.</p>
+        </div>
+        <div data-field>
+          <label for="r-email">Email</label>
+          <input id="r-email" name="email" type="email" required autocomplete="email" placeholder="name@company.com">
+          <p class="field-error">Enter a valid email.</p>
+        </div>
+        <div data-field>
+          <label for="r-co">Company</label>
+          <input id="r-co" name="company" type="text" required placeholder="Company name">
+          <p class="field-error">Enter a company.</p>
+        </div>
+        <div data-field>
+          <label for="r-mobile">Mobile</label>
+          <input id="r-mobile" name="mobile" type="tel" required autocomplete="tel" placeholder="10-digit mobile">
+          <p class="field-error">Enter a mobile number.</p>
+        </div>
+        <div data-field>
+          <label for="r-pass">Password</label>
+          <div class="pass-wrap">
+            <input id="r-pass" name="password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
+            <button type="button" class="pass-toggle" data-pass="#r-pass" aria-label="Show password">Show</button>
+          </div>
+          <p class="field-error">Enter a password.</p>
+        </div>
+        <div data-field>
+          <label for="r-confirm">Confirm password</label>
+          <input id="r-confirm" name="confirm" type="password" required minlength="6" autocomplete="new-password" placeholder="Repeat your password">
+          <p class="field-error">Confirm the password.</p>
+        </div>
+        <div data-field>
+          <label class="check-row"><input type="checkbox" name="terms" required> I accept that this is a demo account with no real retainer.</label>
+          <p class="field-error">Accept the demo terms.</p>
+        </div>
+        <button class="btn btn-signal auth-submit" type="submit">Create account</button>
+        <p class="auth-switch">Already on the desk? <a href="login.html">Sign in</a></p>
+        <p class="auth-back"><a class="btn btn-line" href="index.html">Back to the board</a></p>
+      </form>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="Js/data.js?v=sta1"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="Js/main.js?v=sta22"></script>
+</body>
+</html>

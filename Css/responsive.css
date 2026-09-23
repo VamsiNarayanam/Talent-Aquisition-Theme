@@ -1,0 +1,276 @@
+@media (max-width: 1100px) {
+  .proof, .standards, .standards-board { grid-template-columns: 1fr 1fr; }
+  .stage-track { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.65rem; }
+  .stage-detail { grid-template-columns: 5.5rem minmax(0, 1fr); }
+  .foot-grid { grid-template-columns: 1.3fr 1fr 1fr; }
+  .foot-brand { grid-column: 1 / -1; max-width: 28rem; }
+  .plate { grid-template-columns: 1fr; }
+  .pack-folio .pack { grid-template-columns: 1fr 1fr; }
+  .response-track { grid-template-columns: 1fr 1fr; }
+  .line-card,
+  .line-card.is-flip {
+    grid-template-columns: 1fr;
+  }
+  .line-card.is-flip .line-media,
+  .line-card.is-flip .line-body { order: initial; }
+  .line-media img { min-height: 220px; max-height: 280px; }
+}
+
+@media (max-width: 900px) {
+  .primary-nav, .header-actions { display: none; }
+  .header-bar { grid-template-columns: 1fr auto; }
+  .nav-toggle { display: inline-block; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+  .hero, .hero-stage, .split, .feature, .letter-form, .instruction-form, .faq-layout, .origin-board, .longread-sheet, .arrive-board {
+    grid-template-columns: 1fr;
+  }
+  .hero-stage {
+    min-height: calc(88svh - var(--header));
+  }
+  .hero-copy {
+    padding-block: clamp(2rem, 8vw, 3.4rem);
+    text-align: center;
+  }
+  .hero-stage.is-about::after {
+    bottom: 8%;
+  }
+  .field-card,
+  .field-card.is-flip,
+  .office-card,
+  .office-card.is-flip {
+    grid-template-columns: 1fr;
+  }
+  .field-card.is-flip .field-media,
+  .field-card.is-flip .field-body,
+  .office-card.is-flip .office-media,
+  .office-card.is-flip .office-body { order: initial; }
+  .longread-media img,
+  .field-media img,
+  .office-media img { min-height: 220px; max-height: 300px; }
+  .roster, .plans, .note-grid, .pack, .principles, .refuse, .imprint-grid, .office-grid, .field-grid, .letter-grid, .scope-grid, .glossary, .standards-board, .pack-folio .pack, .notes-board, .letters-stack, .response-track {
+    grid-template-columns: 1fr;
+  }
+  .why-orbit { grid-template-columns: 1fr; gap: 2rem; }
+  .why-chord { display: none; }
+  .why-node { max-width: 26rem; margin-inline: auto; }
+  .why-node.is-mid { transform: none; }
+  .briefs-head { flex-direction: column; align-items: flex-start; }
+  .brief-slide { flex-basis: 84%; }
+  .commission {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .commission-index {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding-bottom: 1.6rem;
+  }
+  .commission-index-kicker { width: 100%; margin-bottom: 0.2rem; }
+  .commission-index > button {
+    flex: 1 1 calc(50% - 0.4rem);
+    min-width: 9rem;
+  }
+  .commission-stage,
+  .commission-panel { min-height: 380px; }
+  .commission-letter {
+    left: 0.85rem;
+    right: 0.85rem;
+    bottom: 0.85rem;
+    padding: 1rem;
+  }
+  .wire-board {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .wire-focus { min-height: 280px; }
+  .wire-shape.is-block { display: none; }
+  .act-canvas { min-height: 360px; }
+  .act-playbill {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    left: 0.9rem;
+    right: 0.9rem;
+    bottom: 0.9rem;
+    max-width: none;
+  }
+  .act-big { font-size: 4rem; }
+  .aside-cta { position: static; }
+  .visit-desks { grid-template-columns: 1fr; }
+  .imprint-plate .imprint-grid { grid-template-columns: 1fr; }
+  .year-board { grid-template-columns: 1fr; min-height: 0; }
+  .year-rail {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.35rem;
+    overflow-x: auto;
+    padding: 0.9rem;
+  }
+  .year-rail-kicker { width: 100%; margin-bottom: 0.15rem; }
+  .year-rail-line {
+    left: 1.2rem;
+    right: 1.2rem;
+    top: 3.15rem;
+    bottom: auto;
+    width: auto;
+    height: 2px;
+  }
+  .year-rail > button {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem;
+    min-width: 4.4rem;
+    flex: 1 1 auto;
+  }
+  .year-meta { align-items: center; }
+  .year-dot { margin-left: 0; }
+  .year-stage { min-height: 300px; }
+  .rules-board,
+  .refuse-board { grid-template-columns: 1fr; }
+  .rules-grid { grid-template-columns: 1fr; }
+  .rules-head { flex-direction: column; align-items: flex-start; }
+  .rule-row { grid-template-columns: 3.5rem minmax(0, 1fr); padding: 1rem; }
+  .visit-close { align-items: flex-start; }
+  .origin-media { min-height: 260px; }
+  .origin-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  :root { --wrap: min(1180px, calc(100% - 1.4rem)); }
+  .stage-board, .fee-row { grid-template-columns: 1fr 1fr; }
+  .fee-row.is-head { display: none; }
+  .fee-row span::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .letter-fields { grid-template-columns: 1fr; }
+  .facsimile-line { grid-template-columns: 1fr; gap: 0.2rem; }
+  .facsimile-doc { padding: 1.25rem 1.1rem 1.2rem; }
+  .facsimile-doc-head {
+    padding-right: 0;
+    margin-top: 2.1rem;
+  }
+  .facsimile-stamp { right: 0.7rem; top: 0.85rem; font-size: 0.56rem; }
+  .facsimile-status { max-width: 100%; text-align: left; }
+  .standards { grid-template-columns: 1fr; }
+  .pack-folio { grid-template-columns: 1fr; }
+  .pack-spine {
+    writing-mode: horizontal-tb;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+  .standards-ledger { grid-template-columns: 1fr; }
+  .standards-spine {
+    writing-mode: horizontal-tb;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+  .standard-lock {
+    grid-template-columns: 2.8rem minmax(0, 1fr);
+  }
+  .standard-state { grid-column: 2; justify-self: start; }
+  .notes-ledger { grid-template-columns: 1fr; }
+  .notes-spine {
+    writing-mode: horizontal-tb;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+  .note-slip {
+    grid-template-columns: 2.8rem minmax(0, 1fr);
+  }
+  .note-mark { grid-column: 2; justify-self: start; }
+  .index-head,
+  .notes-head { flex-direction: column; align-items: flex-start; }
+  .scope-item {
+    grid-template-columns: 2.8rem minmax(0, 1fr);
+  }
+  .scope-state { grid-column: 2; justify-self: start; }
+  .scope-head { flex-direction: column; align-items: flex-start; }
+  .fees-lane .fee-row span::before { color: rgba(243, 238, 230, 0.4); }
+  .line-facts { grid-template-columns: 1fr; gap: 0.5rem; }
+  .brand-signal { font-size: clamp(3.2rem, 18vw, 4.6rem); }
+  .inner-hero { min-height: 78svh; }
+  .rail-head { flex-direction: column; align-items: flex-start; }
+  .brief-card { flex-basis: min(280px, 86vw); }
+  .proof-shape.is-slab,
+  .proof-shape.is-ring { display: none; }
+  .proof-plate { padding: 1.1rem; }
+}
+
+@media (max-width: 480px) {
+  .cta-row, .lost-actions { flex-direction: column; align-items: stretch; }
+  .capacity-plate { grid-template-columns: 1fr; }
+  .capacity-row { grid-template-columns: 1fr; }
+  .proof, .stage-track, .foot-grid { grid-template-columns: 1fr; }
+  .stage-detail { grid-template-columns: 1fr; }
+  .stage-detail-num { font-size: 3.4rem; }
+  .note-card img { height: 190px; }
+  .proof-mast { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+  .index-lane .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .index-lane .filters::-webkit-scrollbar { display: none; }
+  .index-lane .filters button {
+    flex: 0 0 auto;
+  }
+  .site-footer {
+    padding-top: 3.25rem;
+    text-align: center;
+  }
+  .site-footer .wordmark {
+    margin-bottom: 1.5rem;
+    justify-content: center;
+  }
+  .foot-grid,
+  .foot-brand,
+  .foot-links,
+  .foot-base {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+  .foot-brand,
+  .foot-links {
+    gap: 0.7rem;
+  }
+  .foot-socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.55rem;
+  }
+  .foot-links a,
+  .foot-base a,
+  .foot-base p,
+  .foot-brand p {
+    text-align: center;
+  }
+  .foot-base { margin-top: 2.5rem; }
+  .header-bar { gap: 0.6rem; }
+  .wordmark img { height: 2.8rem; }
+  .auth-check { flex-direction: column; align-items: flex-start; }
+  .pre-word { font-size: 2.4rem; }
+}
+
+@media (min-width: 1440px) {
+  :root { --wrap: min(1240px, calc(100% - 4rem)); }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="dash-lock">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client desk — Stackly Talent</title>
+  <meta name="description" content="Demo client desk for Stackly Talent briefs, candidates, interviews, and offer packs.">
+  <meta name="theme-color" content="#F7F4EF">
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="Css/style.css?v=sta12">
+  <link rel="stylesheet" href="Css/pages.css?v=sta3">
+  <link rel="stylesheet" href="Css/responsive.css?v=sta3">
+  <link rel="stylesheet" href="Css/dashboard.css?v=sta5">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="dash-page is-loading" data-role="client">
+  <a class="skip-link" href="#main">Skip to desk</a>
+  <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Opening the signal board">
+    <div class="pre-grid" aria-hidden="true"></div>
+    <div class="pre-plate">
+      <p class="kicker">Stackly Talent</p>
+      <div class="reticle" aria-hidden="true"><span class="reticle-h"></span><span class="reticle-v"></span><span class="reticle-dot"></span></div>
+      <p class="pre-word" data-pre-word>Brief</p>
+      <div class="meter" aria-hidden="true"><span></span></div>
+      <p class="pre-meta"><span data-meter>00</span><span data-pre-stage>Opening the board</span><span>STA</span></p>
+    </div>
+  </div>
+  <div class="dash-shell">
+    <aside class="dash-side" id="dash-side">
+      <a class="wordmark" href="client-dashboard.html"><img src="img/stackly-signal-red.webp" alt="Stackly Talent"></a>
+      <p class="kicker">Client desk</p>
+      <nav class="side-nav" aria-label="Client sections">
+        <button type="button" class="is-on" data-panel="overview">Overview</button>
+        <button type="button" data-panel="briefs">Briefs</button>
+        <button type="button" data-panel="candidates">Candidates</button>
+        <button type="button" data-panel="interviews">Interviews</button>
+        <button type="button" data-panel="offers">Offers</button>
+        <button type="button" data-panel="messages">Messages</button>
+        <button type="button" data-panel="tasks">Tasks</button>
+        <button type="button" data-panel="settings">Settings</button>
+      </nav>
+      <button class="side-logout" type="button" data-logout>Logout</button>
+    </aside>
+    <div class="dash-scrim"></div>
+    <main class="dash-main" id="main">
+      <div class="dash-top">
+        <h1 data-panel-title>Overview</h1>
+        <div class="who" data-who>
+          <span class="who-mark" data-who-initials>AM</span>
+          <span><strong data-who-name>Asha Menon</strong><small data-who-mail>client@stackly.demo</small></span>
+        </div>
+        <button class="dash-burger" type="button" aria-label="Open sections" aria-expanded="false" aria-controls="dash-side">
+          <span class="dash-burger-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <section class="panel is-on" id="panel-overview">
+        <div class="panel-head">
+          <div>
+            <p class="dash-lead">Northwind Labs · ramped hire · demo retainer STA-R2. Three briefs, one function: product.</p>
+          </div>
+          <p class="panel-chip">Week of 22 Sep</p>
+        </div>
+        <div class="stat-row">
+          <article class="stat"><b>3</b><span>open briefs</span></article>
+          <article class="stat"><b>4</b><span>interviews this week</span></article>
+          <article class="stat"><b>1</b><span>offer pack in draft</span></article>
+          <article class="stat"><b>11d</b><span>median to shortlist</span></article>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head">
+              <h2>Needs you</h2>
+              <p class="kicker">3 open</p>
+            </div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">STA-014</span><p>Score the working session for N. Rao<small class="sub">Due today · Meera · Indiranagar room 2</small></p><span class="hide-md">Product</span><span class="status is-wait">Waiting</span></li>
+              <li class="row"><span class="stamp">STA-033</span><p>Read the offer pack before Thursday's call<small class="sub">Band already filed · pack OFF-033</small></p><span class="hide-md">Revenue</span><span class="status">Ready</span></li>
+              <li class="row"><span class="stamp">STA-021</span><p>Confirm the second seat is still remote-India<small class="sub">Search week 2 · entity line missing</small></p><span class="hide-md">Product</span><span class="status is-wait">Waiting</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head">
+              <h3>This week</h3>
+              <p class="kicker">IST</p>
+            </div>
+            <ol class="timeline">
+              <li><time>Tue</time><div><strong>Working session · N. Rao</strong><p>STA-014 · 11:00 · bring scorecard</p></div></li>
+              <li><time>Wed</time><div><strong>Systems loop · L. Joseph</strong><p>STA-021 · video · Meera hosts</p></div></li>
+              <li><time>Thu</time><div><strong>Offer call · A. D'Souza</strong><p>STA-033 · pack must be marked read</p></div></li>
+              <li><time>Fri</time><div><strong>Kickoff · people partner</strong><p>STA-027 · decision maker in the room</p></div></li>
+            </ol>
+            <p class="dash-note" style="margin-top:1rem"><strong>Halt note.</strong> Demo desk only. Figures are for the theme preview.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-briefs">
+        <div class="panel-head">
+          <p class="dash-lead">Filed roles. Scope is the line under the title - not a CV count.</p>
+          <div class="panel-actions">
+            <p class="panel-chip">5 briefs</p>
+            <p class="panel-chip">Product ramp</p>
+          </div>
+        </div>
+        <div class="filter-bar" aria-label="Brief filters">
+          <button type="button" class="is-on">All</button>
+          <button type="button">Shortlist</button>
+          <button type="button">Interviews</button>
+          <button type="button">Search</button>
+          <button type="button">Closed</button>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Live briefs</h2><p class="kicker">Open seats</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">STA-014</span><p>Staff product designer<small class="sub">Bengaluru or remote · 1 seat · band ₹42-48L · Meera</small></p><span class="hide-md">Meera</span><span class="status is-wait">Shortlist</span></li>
+              <li class="row"><span class="stamp">STA-018</span><p>Revenue operations lead<small class="sub">Hyderabad · 1 seat · band ₹36-40L · Arjun</small></p><span class="hide-md">Arjun</span><span class="status">Interviews</span></li>
+              <li class="row"><span class="stamp">STA-021</span><p>Backend engineer, payments<small class="sub">Remote-India · 2 seats · band ₹32-38L</small></p><span class="hide-md">Meera</span><span class="status">Search</span></li>
+              <li class="row"><span class="stamp">STA-027</span><p>People partner, ops<small class="sub">Bengaluru · 1 seat · kickoff Thursday</small></p><span class="hide-md">Leela</span><span class="status is-wait">Kickoff</span></li>
+              <li class="row"><span class="stamp">STA-009</span><p>Support lead<small class="sub">Closed · accepted inside band · INV-STA-088</small></p><span class="hide-md">Leela</span><span class="status">Close</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Retainer scope</h3><p class="kicker">STA-R2</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>Three briefs max</strong><span>Product function only on this ramp.</span></div></li>
+              <li><span class="idx">02</span><div><strong>Weekly note</strong><span>Mondays. Who was spoken to, who declined.</span></div></li>
+              <li><span class="idx">03</span><div><strong>90-day replace</strong><span>Same seat only. New bar is a new brief.</span></div></li>
+            </ul>
+            <div class="mini-grid" style="margin-top:1rem">
+              <article class="mini-tile"><p class="kicker">Cycle</p><strong>8-12w</strong><p>Typical retained seat</p></article>
+              <article class="mini-tile"><p class="kicker">Fee demo</p><strong>₹2.4L</strong><p>Monthly ramp line</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-candidates">
+        <div class="panel-head">
+          <p class="dash-lead">Scores are 1-4 against the filed bar. A blank cell means the loop is not finished.</p>
+          <p class="panel-chip">5 on the board</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Active people</h2><p class="kicker">Scorecard</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">C-118</span><p>N. Rao<small class="sub">STA-014 · portfolio 3 · session pending · systems -</small></p><span class="hide-md">Bengaluru</span><span class="status is-wait">In loop</span></li>
+              <li class="row"><span class="stamp">C-121</span><p>S. Idris<small class="sub">STA-014 · portfolio 4 · system work 3 · craft evidence</small></p><span class="hide-md">Remote</span><span class="status">Shortlist</span></li>
+              <li class="row"><span class="stamp">C-104</span><p>P. Kulkarni<small class="sub">STA-018 · ops cases 3 · stakeholder 3 · HM pending</small></p><span class="hide-md">Hyderabad</span><span class="status">Debrief</span></li>
+              <li class="row"><span class="stamp">C-099</span><p>R. Menon<small class="sub">STA-021 · systems 2 · below bar · written outcome sent</small></p><span class="hide-md">Pune</span><span class="status is-halt">Declined</span></li>
+              <li class="row"><span class="stamp">C-130</span><p>A. D'Souza<small class="sub">STA-033 · territory 4 · references filed</small></p><span class="hide-md">Mumbai</span><span class="status">Offer</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Bar reminders</h3><p class="kicker">Method</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>No half marks</strong><span>A 3 met the bar. A 4 exceeded it on a named point.</span></div></li>
+              <li><span class="idx">02</span><div><strong>Disagreement stays</strong><span>Do not average product and engineering into a maybe.</span></div></li>
+              <li><span class="idx">03</span><div><strong>Silence is not a stage</strong><span>Every interviewed person gets a written outcome.</span></div></li>
+            </ul>
+            <p class="dash-note" style="margin-top:1rem"><strong>Strong hire</strong> with no sentence is sent back.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-interviews">
+        <div class="panel-head">
+          <p class="dash-lead">Same questions as the scorecard. Times are IST. Rooms are booked slots only.</p>
+          <p class="panel-chip">4 this week</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Schedule</h2><p class="kicker">Board</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">Tue 11:00</span><p>N. Rao · working session<small class="sub">STA-014 · Indiranagar room 2 · scorecard open</small></p><span class="hide-md">Meera</span><span class="status is-wait">Today</span></li>
+              <li class="row"><span class="stamp">Tue 16:30</span><p>P. Kulkarni · hiring manager<small class="sub">STA-018 · video · same questions as filed loop</small></p><span class="hide-md">Arjun</span><span class="status">Booked</span></li>
+              <li class="row"><span class="stamp">Wed 10:00</span><p>L. Joseph · systems<small class="sub">STA-021 · video · payments bar</small></p><span class="hide-md">Meera</span><span class="status">Booked</span></li>
+              <li class="row"><span class="stamp">Thu 15:00</span><p>A. D'Souza · offer call<small class="sub">STA-033 · pack must be read first</small></p><span class="hide-md">Arjun</span><span class="status is-wait">Hold</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Room notes</h3><p class="kicker">Desk</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>Metro</strong><span>Indiranagar · eight-minute walk · ask STA-BLR-01</span></div></li>
+              <li><span class="idx">02</span><div><strong>Video</strong><span>Link in the calendar invite · no lobby queue</span></div></li>
+              <li><span class="idx">03</span><div><strong>Debrief</strong><span>Same day. Notes on the scorecard, not a side chat.</span></div></li>
+            </ul>
+            <div class="mini-grid" style="margin-top:1rem">
+              <article class="mini-tile"><p class="kicker">Today</p><strong>1</strong><p>Session to score</p></article>
+              <article class="mini-tile"><p class="kicker">Held</p><strong>1</strong><p>Until pack is read</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-offers">
+        <div class="panel-head">
+          <p class="dash-lead">No verbal offer until you have opened the pack. Six parts, laid out.</p>
+          <p class="panel-chip">2 packs</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Offer queue</h2><p class="kicker">Client</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">OFF-033</span><p>A. D'Souza · enterprise AE<small class="sub">Band ₹28L + variable as filed · start 3 Nov · pack unread</small></p><span class="hide-md">Draft</span><a class="btn btn-line" href="404.html">Mark read</a></li>
+              <li class="row"><span class="stamp">OFF-009</span><p>Support lead · closed<small class="sub">Accepted inside band · GST invoice demo INV-STA-088</small></p><span class="hide-md">Closed</span><span class="status">Filed</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Pack contents</h3><p class="kicker">01-06</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>Role brief</strong><span>Seat, bar, first six months.</span></div></li>
+              <li><span class="idx">02</span><div><strong>Scorecard</strong><span>Marks left visible, including disagreement.</span></div></li>
+              <li><span class="idx">03</span><div><strong>Compensation band</strong><span>Fixed, variable, already filed.</span></div></li>
+              <li><span class="idx">04</span><div><strong>Notice and start</strong><span>Dates the team can plan around.</span></div></li>
+              <li><span class="idx">05</span><div><strong>References</strong><span>What was asked, what was not claimed.</span></div></li>
+              <li><span class="idx">06</span><div><strong>Decision note</strong><span>Why this person, what would reopen search.</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-messages">
+        <div class="panel-head">
+          <p class="dash-lead">Notes from the partner. Replies stay on this screen. Demo only.</p>
+          <p class="panel-chip">3 threads</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Inbox</h2><p class="kicker">Partners</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">MI</span><p>STA-014 shortlist is five names, not seven.<small class="sub">Yesterday · the bar on systems work cut two people.</small></p><span class="hide-md">Meera</span><span class="status">Note</span></li>
+              <li class="row"><span class="stamp">AS</span><p>STA-033 variable matches the filed plan.<small class="sub">Monday · do not reopen the OTE on the call.</small></p><span class="hide-md">Arjun</span><span class="status">Note</span></li>
+              <li class="row"><span class="stamp">LN</span><p>STA-027 kickoff questions attached.<small class="sub">Friday · need the decision maker in the room.</small></p><span class="hide-md">Leela</span><span class="status is-wait">Ask</span></li>
+              <li class="row"><span class="stamp">MI</span><p>STA-021 entity line still blank on remote-India.<small class="sub">Today · search pauses until it is named.</small></p><span class="hide-md">Meera</span><span class="status is-halt">Halt</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Write back</h3><p class="kicker">Demo</p></div>
+            <form class="reply" action="404.html" method="get">
+              <label for="msg">Reply</label>
+              <textarea id="msg" name="message" required placeholder="Write to the partner"></textarea>
+              <button class="btn btn-signal" type="submit">Send note</button>
+            </form>
+            <p class="dash-note" style="margin-top:1rem"><strong>Demo.</strong> Nothing leaves this browser.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-tasks">
+        <div class="panel-head">
+          <p class="dash-lead">Small actions that unblock a brief. Completing one only confirms it here.</p>
+          <p class="panel-chip">3 open</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Your list</h2><p class="kicker">Client</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">T-14</span><p>Send the design-system examples for STA-014<small class="sub">Needed before N. Rao session scoring</small></p><span class="hide-md">Today</span><a class="btn btn-line" href="404.html">Done</a></li>
+              <li class="row"><span class="stamp">T-18</span><p>Name the finance partner for the STA-018 band<small class="sub">Floor must be seen before first AE call</small></p><span class="hide-md">Wed</span><a class="btn btn-line" href="404.html">Done</a></li>
+              <li class="row"><span class="stamp">T-21</span><p>Confirm employing entity for remote-India<small class="sub">STA-021 · seat 2 still waiting</small></p><span class="hide-md">Fri</span><a class="btn btn-line" href="404.html">Done</a></li>
+              <li class="row"><span class="stamp">T-33</span><p>Open offer pack OFF-033 before Thursday<small class="sub">Verbal offer blocked until marked read</small></p><span class="hide-md">Thu</span><a class="btn btn-line" href="404.html">Done</a></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Done this week</h3><p class="kicker">Demo</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">OK</span><div><strong>Band floor confirmed</strong><span>STA-014 · finance signed off Monday.</span></div></li>
+              <li><span class="idx">OK</span><div><strong>Kickoff slot booked</strong><span>STA-027 · Friday 11:00 IST.</span></div></li>
+            </ul>
+            <div class="mini-grid" style="margin-top:1rem">
+              <article class="mini-tile"><p class="kicker">Open</p><strong>4</strong><p>On your desk</p></article>
+              <article class="mini-tile"><p class="kicker">Closed</p><strong>2</strong><p>This week</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-settings">
+        <div class="panel-head">
+          <p class="dash-lead">Profile for this browser. Nothing is sent to a server.</p>
+          <p class="panel-chip">Local only</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Profile</h2><p class="kicker">Client</p></div>
+            <form class="settings-form" action="404.html" method="get">
+              <div class="settings-grid">
+                <div data-field><label for="s-name">Name</label><input id="s-name" name="name" value="Asha Menon" required></div>
+                <div data-field><label for="s-email">Email</label><input id="s-email" name="email" type="email" value="client@stackly.demo" required></div>
+                <div data-field><label for="s-co">Company</label><input id="s-co" name="company" value="Northwind Labs" required></div>
+                <div data-field><label for="s-city">Desk city</label><input id="s-city" name="city" value="Bengaluru" required></div>
+                <div class="is-full" data-field>
+                  <label class="check-row"><input type="checkbox" checked> Weekly note by email (demo toggle)</label>
+                </div>
+                <div class="is-full" data-field>
+                  <label class="check-row"><input type="checkbox" checked> Remind me when an offer pack is waiting</label>
+                </div>
+                <div class="is-full">
+                  <button class="btn btn-signal" type="submit">Save profile</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Session</h3><p class="kicker">Browser</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>Role</strong><span>Client desk · localStorage session</span></div></li>
+              <li><span class="idx">02</span><div><strong>Retainer</strong><span>STA-R2 · ramped hire · product</span></div></li>
+              <li><span class="idx">03</span><div><strong>Logout</strong><span>Clears this browser only. Use the sidebar.</span></div></li>
+            </ul>
+            <p class="dash-note" style="margin-top:1rem"><strong>Demo.</strong> No mail, invoice, or retainer is real on this preview.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="Js/data.js?v=sta1"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="Js/main.js?v=sta1"></script>
+  <script src="Js/dash.js?v=sta4"></script>
+</body>
+</html>

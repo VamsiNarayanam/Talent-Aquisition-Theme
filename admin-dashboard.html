@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="dash-lock">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin desk — Stackly Talent</title>
+  <meta name="description" content="Demo admin desk for Stackly Talent: clients, pipeline, time, invoices, and the offer queue.">
+  <meta name="theme-color" content="#F7F4EF">
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="Css/style.css?v=sta12">
+  <link rel="stylesheet" href="Css/pages.css?v=sta3">
+  <link rel="stylesheet" href="Css/responsive.css?v=sta3">
+  <link rel="stylesheet" href="Css/dashboard.css?v=sta5">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="dash-page is-loading" data-role="admin">
+  <a class="skip-link" href="#main">Skip to desk</a>
+  <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Opening the signal board">
+    <div class="pre-grid" aria-hidden="true"></div>
+    <div class="pre-plate">
+      <p class="kicker">Stackly Talent</p>
+      <div class="reticle" aria-hidden="true"><span class="reticle-h"></span><span class="reticle-v"></span><span class="reticle-dot"></span></div>
+      <p class="pre-word" data-pre-word>Brief</p>
+      <div class="meter" aria-hidden="true"><span></span></div>
+      <p class="pre-meta"><span data-meter>00</span><span data-pre-stage>Opening the board</span><span>STA</span></p>
+    </div>
+  </div>
+  <div class="dash-shell">
+    <aside class="dash-side" id="dash-side">
+      <a class="wordmark" href="admin-dashboard.html"><img src="img/stackly-signal-red.webp" alt="Stackly Talent"></a>
+      <p class="kicker">Admin desk</p>
+      <nav class="side-nav" aria-label="Admin sections">
+        <button type="button" class="is-on" data-panel="overview">Overview</button>
+        <button type="button" data-panel="clients">Clients book</button>
+        <button type="button" data-panel="pipeline">Pipeline</button>
+        <button type="button" data-panel="time">Recruiter time</button>
+        <button type="button" data-panel="invoices">Invoices</button>
+        <button type="button" data-panel="offers">Offer queue</button>
+        <button type="button" data-panel="messages">Messages</button>
+        <button type="button" data-panel="team">Team</button>
+        <button type="button" data-panel="settings">Settings</button>
+      </nav>
+      <button class="side-logout" type="button" data-logout>Logout</button>
+    </aside>
+    <div class="dash-scrim"></div>
+    <main class="dash-main" id="main">
+      <div class="dash-top">
+        <h1 data-panel-title>Overview</h1>
+        <div class="who" data-who>
+          <span class="who-mark" data-who-initials>KR</span>
+          <span><strong data-who-name>Kabir Rao</strong><small data-who-mail>admin@stackly.demo</small></span>
+        </div>
+        <button class="dash-burger" type="button" aria-label="Open sections" aria-expanded="false" aria-controls="dash-side">
+          <span class="dash-burger-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <section class="panel is-on" id="panel-overview">
+        <div class="panel-head">
+          <p class="dash-lead">House view for the week. Figures are demo. GSTIN on invoices is a sample.</p>
+          <p class="panel-chip">Admin · Week 39</p>
+        </div>
+        <div class="stat-row">
+          <article class="stat"><b>11</b><span>live briefs</span></article>
+          <article class="stat"><b>4</b><span>clients on retainer</span></article>
+          <article class="stat"><b>66h</b><span>partner time logged</span></article>
+          <article class="stat"><b>2</b><span>offer packs waiting</span></article>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Halt board</h2><p class="kicker">Act first</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">STA-036</span><p>Sable Freight enquiry has no decision maker<small class="sub">Do not open search · leave in enquiry</small></p><span class="hide-md">Leela</span><span class="status is-halt">Halt</span></li>
+              <li class="row"><span class="stamp">STA-033</span><p>Offer pack unread by the client<small class="sub">Hold the Thursday call · Arjun owns</small></p><span class="hide-md">Arjun</span><span class="status is-wait">Waiting</span></li>
+              <li class="row"><span class="stamp">INV-104</span><p>Northwind September ramp still open<small class="sub">Due 30 Sep · ₹2.4L + GST</small></p><span class="hide-md">Finance</span><span class="status is-wait">Open</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Capacity</h3><p class="kicker">Partners</p></div>
+            <div class="mini-grid">
+              <article class="mini-tile"><p class="kicker">Meera</p><strong>26h</strong><p>Product · STA-014 / 021</p></article>
+              <article class="mini-tile"><p class="kicker">Arjun</p><strong>22h</strong><p>Revenue · STA-033 / 018</p></article>
+              <article class="mini-tile"><p class="kicker">Leela</p><strong>18h</strong><p>Ops · STA-027 / Harbour</p></article>
+              <article class="mini-tile"><p class="kicker">Open seats</p><strong>7</strong><p>Across live briefs</p></article>
+            </div>
+            <p class="dash-note" style="margin-top:1rem"><strong>Halt note.</strong> Demo house figures. Not a published claim.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-clients">
+        <div class="panel-head">
+          <p class="dash-lead">The book. One retainer line each. Not a lead dump.</p>
+          <p class="panel-chip">5 accounts</p>
+        </div>
+        <div class="filter-bar">
+          <button type="button" class="is-on">All</button>
+          <button type="button">Active</button>
+          <button type="button">Hold</button>
+          <button type="button">Archive</button>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Client book</h2><p class="kicker">Retainers</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">NW</span><p>Northwind Labs<small class="sub">Ramped hire · product · Asha Menon · STA-R2</small></p><span class="hide-md">Bengaluru</span><span class="status">Active</span></li>
+              <li class="row"><span class="stamp">SF</span><p>Sable Freight<small class="sub">Enquiry only · ops contract · no owner yet</small></p><span class="hide-md">Pune</span><span class="status is-halt">Hold</span></li>
+              <li class="row"><span class="stamp">KC</span><p>Kite &amp; Co<small class="sub">Retained · revenue AE · Arjun · OFF-033 waiting</small></p><span class="hide-md">Mumbai</span><span class="status">Active</span></li>
+              <li class="row"><span class="stamp">HC</span><p>Harbour Clinics<small class="sub">Project surge · campus pod · Leela · week 4</small></p><span class="hide-md">Hyderabad</span><span class="status">Week 4</span></li>
+              <li class="row"><span class="stamp">OR</span><p>Orange Route<small class="sub">Closed FY26 · support lead inside band</small></p><span class="hide-md">Bengaluru</span><span class="status">Archive</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Book rules</h3><p class="kicker">Desk</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>One owner</strong><span>No search without a named decision maker.</span></div></li>
+              <li><span class="idx">02</span><div><strong>Fee first</strong><span>GST and replace window on the retainer page.</span></div></li>
+              <li><span class="idx">03</span><div><strong>Enquiry is not a brief</strong><span>Sable stays halted until an owner appears.</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-pipeline">
+        <div class="panel-head">
+          <p class="dash-lead">Grouped by stage. Rows, not empty columns. Partner named on every line.</p>
+          <p class="panel-chip">11 live</p>
+        </div>
+        <div class="dash-card">
+          <p class="group-label">Kickoff</p>
+          <ul class="rows">
+            <li class="row"><span class="stamp">STA-027</span><p>People partner · Northwind<small class="sub">Decision maker confirmed · Friday slot</small></p><span class="hide-md">Leela</span><span class="status is-wait">Thu</span></li>
+            <li class="row"><span class="stamp">STA-041</span><p>Brand editor · Kite &amp; Co<small class="sub">Brief draft with client · not filed yet</small></p><span class="hide-md">Meera</span><span class="status">Draft</span></li>
+          </ul>
+          <p class="group-label">Shortlist</p>
+          <ul class="rows">
+            <li class="row"><span class="stamp">STA-014</span><p>Staff product designer · Northwind<small class="sub">Five names · systems bar cut two</small></p><span class="hide-md">Meera</span><span class="status is-wait">5 names</span></li>
+            <li class="row"><span class="stamp">STA-018</span><p>Revenue operations · Harbour<small class="sub">Six names · HM loop Tuesday</small></p><span class="hide-md">Arjun</span><span class="status">6 names</span></li>
+          </ul>
+          <p class="group-label">Interviews</p>
+          <ul class="rows">
+            <li class="row"><span class="stamp">STA-021</span><p>Payments engineer · Northwind · seat 1 of 2<small class="sub">Entity line still blank for seat 2</small></p><span class="hide-md">Meera</span><span class="status">Loop</span></li>
+          </ul>
+          <p class="group-label">Offer</p>
+          <ul class="rows">
+            <li class="row"><span class="stamp">STA-033</span><p>Enterprise AE · Kite &amp; Co<small class="sub">Pack out · client has not marked read</small></p><span class="hide-md">Arjun</span><span class="status is-wait">Pack out</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-time">
+        <div class="panel-head">
+          <p class="dash-lead">Hours this week. Demo log, not payroll. Used to balance load across partners.</p>
+          <p class="panel-chip">66h total</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Partner log</h2><p class="kicker">Week 39</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">MI</span><p>Meera Iyer<small class="sub">STA-014 11h · STA-021 9h · briefs 6h · debriefs included</small></p><span class="hide-md">Product</span><span class="status">26h</span></li>
+              <li class="row"><span class="stamp">AS</span><p>Arjun Shah<small class="sub">STA-033 8h · STA-018 10h · client notes 4h</small></p><span class="hide-md">Revenue</span><span class="status">22h</span></li>
+              <li class="row"><span class="stamp">LN</span><p>Leela Nambiar<small class="sub">STA-027 7h · Harbour pod 11h</small></p><span class="hide-md">Ops</span><span class="status">18h</span></li>
+              <li class="row"><span class="stamp">KR</span><p>Kabir Rao<small class="sub">Invoices 3h · offer queue 2h · book review 1h</small></p><span class="hide-md">Admin</span><span class="status">6h</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Load note</h3><p class="kicker">Desk</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>Meera near cap</strong><span>Do not add a fourth product brief this week.</span></div></li>
+              <li><span class="idx">02</span><div><strong>Arjun offer hold</strong><span>Time blocked until OFF-033 is marked read.</span></div></li>
+              <li><span class="idx">03</span><div><strong>Leela surge</strong><span>Harbour week 4 · keep STA-027 kickoff protected.</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-invoices">
+        <div class="panel-head">
+          <p class="dash-lead">Sample GST invoices. Do not file. GSTIN 29AABCT8841Q1Z8 is fake.</p>
+          <p class="panel-chip">4 lines</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Invoice board</h2><p class="kicker">Demo</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">INV-104</span><p>Northwind · September ramp<small class="sub">₹2,40,000 + GST 18% · due 30 Sep</small></p><span class="hide-md">Due 30 Sep</span><span class="status is-wait">Open</span></li>
+              <li class="row"><span class="stamp">INV-099</span><p>Kite &amp; Co · retained first third<small class="sub">₹1,80,000 + GST · due 20 Sep</small></p><span class="hide-md">Due 20 Sep</span><span class="status">Sent</span></li>
+              <li class="row"><span class="stamp">INV-088</span><p>Orange Route · close<small class="sub">Paid · demo receipt on file</small></p><span class="hide-md">12 Aug</span><span class="status">Paid</span></li>
+              <li class="row"><span class="stamp">INV-091</span><p>Harbour · surge milestone 2<small class="sub">₹2,26,000 + GST · draft</small></p><span class="hide-md">Due 4 Oct</span><span class="status is-wait">Draft</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Totals (demo)</h3><p class="kicker">Sample</p></div>
+            <div class="mini-grid">
+              <article class="mini-tile"><p class="kicker">Open</p><strong>₹2.4L</strong><p>Before GST</p></article>
+              <article class="mini-tile"><p class="kicker">Draft</p><strong>₹2.26L</strong><p>Harbour M2</p></article>
+            </div>
+            <p class="dash-note" style="margin-top:1rem"><strong>Sample GSTIN.</strong> Do not copy onto a real invoice.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-offers">
+        <div class="panel-head">
+          <p class="dash-lead">Queue before a partner is allowed to speak the number. Pack first.</p>
+          <p class="panel-chip">2 waiting</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Offer queue</h2><p class="kicker">Admin</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">OFF-033</span><p>A. D'Souza · Kite &amp; Co<small class="sub">Band matches brief · client has not opened the pack</small></p><span class="hide-md">Arjun</span><a class="btn btn-line" href="404.html">Hold</a></li>
+              <li class="row"><span class="stamp">OFF-018</span><p>P. Kulkarni · Harbour<small class="sub">Scorecard missing the hiring-manager mark</small></p><span class="hide-md">Arjun</span><a class="btn btn-line" href="404.html">Return</a></li>
+              <li class="row"><span class="stamp">OFF-009</span><p>Support lead · Orange Route<small class="sub">Closed inside band · archive</small></p><span class="hide-md">Leela</span><span class="status">Filed</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Gate rules</h3><p class="kicker">Close</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>Pack before theatre</strong><span>No verbal offer without the six-part pack.</span></div></li>
+              <li><span class="idx">02</span><div><strong>Scorecard complete</strong><span>Missing HM mark returns the pack.</span></div></li>
+              <li><span class="idx">03</span><div><strong>Band locked</strong><span>Outside band needs a rewritten brief.</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-messages">
+        <div class="panel-head">
+          <p class="dash-lead">Client and partner notes. Replies stay on this screen.</p>
+          <p class="panel-chip">3 open</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Threads</h2><p class="kicker">Desk</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">AM</span><p>Asha Menon · can we add a fourth brief to the ramp?<small class="sub">Answer: no. Ramped hire is three.</small></p><span class="hide-md">Client</span><span class="status is-wait">Reply</span></li>
+              <li class="row"><span class="stamp">MI</span><p>Meera · STA-014 debrief notes are in the scorecard.<small class="sub">No side thread.</small></p><span class="hide-md">Partner</span><span class="status">Filed</span></li>
+              <li class="row"><span class="stamp">LN</span><p>Leela · Sable still has no owner.<small class="sub">Leave it in enquiry.</small></p><span class="hide-md">Partner</span><span class="status is-halt">Halt</span></li>
+              <li class="row"><span class="stamp">AS</span><p>Arjun · OFF-033 still unread by Kite.<small class="sub">Call held until mark-read.</small></p><span class="hide-md">Partner</span><span class="status is-wait">Hold</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Internal note</h3><p class="kicker">Demo</p></div>
+            <form class="reply" action="404.html" method="get">
+              <label for="a-msg">Write</label>
+              <textarea id="a-msg" required placeholder="To the partner or the client book"></textarea>
+              <button class="btn btn-signal" type="submit">File note</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-team">
+        <div class="panel-head">
+          <p class="dash-lead">Partners on the board. A fifth partner is not the plan.</p>
+          <p class="panel-chip">4 seats</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Roster</h2><p class="kicker">House</p></div>
+            <ul class="rows">
+              <li class="row"><span class="stamp">MI</span><p>Meera Iyer<small class="sub">Product · Bengaluru · signs STA-014, STA-021</small></p><span class="hide-md">Partner</span><span class="status">Desk</span></li>
+              <li class="row"><span class="stamp">AS</span><p>Arjun Shah<small class="sub">Revenue · Hyderabad desk days · STA-033, STA-018</small></p><span class="hide-md">Partner</span><span class="status">Desk</span></li>
+              <li class="row"><span class="stamp">LN</span><p>Leela Nambiar<small class="sub">Ops and surge · STA-027, Harbour</small></p><span class="hide-md">Partner</span><span class="status">Desk</span></li>
+              <li class="row"><span class="stamp">KR</span><p>Kabir Rao<small class="sub">Desk admin · invoices and the offer queue</small></p><span class="hide-md">Admin</span><span class="status">You</span></li>
+            </ul>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Coverage</h3><p class="kicker">Cities</p></div>
+            <div class="mini-grid">
+              <article class="mini-tile"><p class="kicker">Bengaluru</p><strong>2</strong><p>Meera · Kabir</p></article>
+              <article class="mini-tile"><p class="kicker">Hyderabad</p><strong>1</strong><p>Arjun desk days</p></article>
+              <article class="mini-tile"><p class="kicker">Ops / surge</p><strong>1</strong><p>Leela</p></article>
+              <article class="mini-tile"><p class="kicker">Open hire</p><strong>0</strong><p>No fifth partner</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-settings">
+        <div class="panel-head">
+          <p class="dash-lead">Desk settings for this browser. Demo only.</p>
+          <p class="panel-chip">Local</p>
+        </div>
+        <div class="dash-split">
+          <div class="dash-card">
+            <div class="dash-card-head"><h2>Profile</h2><p class="kicker">Admin</p></div>
+            <form class="settings-form" action="404.html" method="get">
+              <div class="settings-grid">
+                <div data-field><label for="ad-name">Name</label><input id="ad-name" value="Kabir Rao" required></div>
+                <div data-field><label for="ad-email">Email</label><input id="ad-email" type="email" value="admin@stackly.demo" required></div>
+                <div class="is-full" data-field>
+                  <label class="check-row"><input type="checkbox" checked> Show halt rows at the top of overview</label>
+                </div>
+                <div class="is-full" data-field>
+                  <label class="check-row"><input type="checkbox" checked> Flag unread offer packs in the top bar</label>
+                </div>
+                <div class="is-full">
+                  <button class="btn btn-signal" type="submit">Save settings</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-head"><h3>Session</h3><p class="kicker">Browser</p></div>
+            <ul class="fact-list">
+              <li><span class="idx">01</span><div><strong>Role</strong><span>Admin desk · localStorage session</span></div></li>
+              <li><span class="idx">02</span><div><strong>GSTIN sample</strong><span>29AABCT8841Q1Z8 · do not file</span></div></li>
+              <li><span class="idx">03</span><div><strong>Logout</strong><span>Clears this browser only.</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="Js/data.js?v=sta1"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="Js/main.js?v=sta1"></script>
+  <script src="Js/dash.js?v=sta3"></script>
+</body>
+</html>
