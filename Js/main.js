@@ -156,8 +156,12 @@
     const offsetFor = (i) => {
       if (!slides[i] || !track) return 0;
       const view = track.parentElement;
-      const max = Math.max(0, track.scrollWidth - (view ? view.clientWidth : 0));
-      return Math.min(slides[i].offsetLeft, max);
+      const viewWidth = view
+        ? view.clientWidth - parseFloat(getComputedStyle(view).paddingLeft) - parseFloat(getComputedStyle(view).paddingRight)
+        : 0;
+      const slide = slides[i];
+      const rightAligned = slide.offsetLeft + slide.offsetWidth - viewWidth;
+      return Math.max(0, Math.min(slide.offsetLeft, rightAligned));
     };
 
     const go = (n) => {
@@ -487,19 +491,19 @@
     location.href = "404.html";
   });
 
-  $$("[data-pass]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const input = $(btn.getAttribute("data-pass"));
-      if (!input) return;
-      const show = input.type === "password";
-      input.type = show ? "text" : "password";
-      btn.textContent = show ? "Hide" : "Show";
-      btn.setAttribute("aria-label", show ? "Hide password" : "Show password");
-    });
-  });
-
   $("[data-forgot]")?.addEventListener("click", () => {
     location.href = "404.html";
+  });
+
+  $$('[data-pass]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const input = $(btn.getAttribute('data-pass'));
+      if (!input) return;
+      const show = input.type === 'password';
+      input.type = show ? 'text' : 'password';
+      btn.textContent = show ? 'Hide password' : 'Show password';
+      btn.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
+    });
   });
 
   const users = () => (window.STA && STA.demoUsers) || {};

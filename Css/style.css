@@ -777,6 +777,8 @@ p { margin: 0 0 0.8rem; }
   transition: opacity 0.45s ease, transform 0.45s ease, border-color 0.45s ease;
 }
 
+.brief-slide:last-child { margin-right: 4rem; }
+
 .brief-slide.is-on {
   opacity: 1;
   transform: scale(1);
@@ -2479,7 +2481,11 @@ textarea { min-height: 140px; resize: vertical; }
 .check-row input { width: auto; margin-top: 0.25rem; }
 
 .pass-wrap { position: relative; }
-.pass-wrap input { padding-right: 4.2rem; }
+.pass-wrap input { padding-right: 7.4rem; }
+.pass-wrap input::-ms-reveal,
+.pass-wrap input::-ms-clear {
+  display: none;
+}
 .pass-toggle {
   position: absolute;
   right: 0.4rem;

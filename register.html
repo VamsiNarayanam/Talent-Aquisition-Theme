@@ -70,13 +70,16 @@
           <label for="r-pass">Password</label>
           <div class="pass-wrap">
             <input id="r-pass" name="password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
-            <button type="button" class="pass-toggle" data-pass="#r-pass" aria-label="Show password">Show</button>
+            <button type="button" class="pass-toggle" data-pass="#r-pass" aria-label="Show password">Show password</button>
           </div>
           <p class="field-error">Enter a password.</p>
         </div>
         <div data-field>
           <label for="r-confirm">Confirm password</label>
-          <input id="r-confirm" name="confirm" type="password" required minlength="6" autocomplete="new-password" placeholder="Repeat your password">
+          <div class="pass-wrap">
+            <input id="r-confirm" name="confirm" type="password" required minlength="6" autocomplete="new-password" placeholder="Repeat your password">
+            <button type="button" class="pass-toggle" data-pass="#r-confirm" aria-label="Show password">Show password</button>
+          </div>
           <p class="field-error">Confirm the password.</p>
         </div>
         <div data-field>
